@@ -1,0 +1,79 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: grayscale;
+    font-family: Open Sans, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.iframe-container {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    display: flex;
+}
+
+.iframe-container>iframe {
+    border: 0;
+    width: 100%;
+    flex: 1;
+}
+
+.car-container {
+    position: fixed;
+    bottom: 20px;
+    left: 42%;
+}
+
+button {
+    width: 120px;
+    border: 1px solid white;
+}
+
+.car-container>button {
+    margin-right: 10px;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.left-container {
+    position: fixed;
+    top: 80px;
+    left: 10px;
+}
+
+.left-container>button {
+    margin-bottom: 10px;
+    padding: 16px;
+    background-color: black;
+    color: white;
+    display: block;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+
+button.disabled {
+    cursor: default;
+    pointer-events: none;
+    color: #ccc;
+    background-color: #e7e7e7;
+    transition: background-color .25s ease;
+}
